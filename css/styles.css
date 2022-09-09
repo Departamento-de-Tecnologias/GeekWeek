@@ -53,13 +53,24 @@ body {
 }
 
 
+#inscripciones{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#inscripciones a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
 /*BOTONES*/
 /* From uiverse.io by @barisdogansutcu */
 button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 0 10px;
     color: white;
     text-shadow: 2px 2px rgb(116, 116, 116);
@@ -73,41 +84,45 @@ button {
     position: relative;
     overflow: hidden;
     transition: all .5s ease;
-  }
+    height: 140px;
+    width: 100%;
+}
+
+button span{
+  font-size: 32px;
+}
   
-  button:active {
-    transform: scale(.9);
-    transition: all 100ms ease;
-  }
-  
-  button svg {
-    transition: all .5s ease;
-    z-index: 2;
-  }
-  
-  .play {
-    transition: all .5s ease;
-    transition-delay: 300ms;
-  }
-  
-  button:hover svg {
-    transform: scale(3) translate(50%);
-  }
-  
-  .now {
-    position: absolute;
-    left: 0;
-    transform: translateX(-100%);
-    transition: all .5s ease;
-    z-index: 2;
-  }
-  
-  button:hover .now {
-    transform: translateX(10px);
-    transition-delay: 300ms;
-  }
-  
-  button:hover .play {
-    transform: translateX(200%);
-    transition-delay: 300ms;
-  }
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+.now {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(-100px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(-100%);
+  transition-delay: 300ms;
+}
