@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+@import url('http://fonts.cdnfonts.com/css/comic-shark');
 
 nav{
     display: grid;
@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 	color: #363639;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Comic Shark', sans-serif;
   scroll-behavior: smooth;
 }
 .active{
@@ -23,40 +23,19 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #edb93c;
-    background-image: url("../assets/burbuja2.png");
-    background-position: center;
-    background-repeat: round;
-    transition: background 300ms ease-in 200ms;
-}
-
-.principal:hover{
-  background-image: url("../assets/burbuja3.png");
 }
 
 .imagen > img{
   height: 100vh;
-  width: 50vw;
   object-fit: fill;
-  position: relative;
 }
 
 .main-text{
-  position: absolute;
   color: #FFFFFF;
   text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
   top:100px;
   right: 100px;
-  animation: titulo infinite alternate 3s;
-}
-
-@keyframes titulo{
-  from{
-    margin-top: 0;
-  }
-
-  to{
-    margin-top: 90px;
-  }
+  margin: 0 20px;
 }
 
 .separador{
