@@ -4,21 +4,24 @@ let participantes = [
         nombre:'Aitana Ximena Espín Olaya',
         personaje:'Yor Forger - SPY X FAMILY',
         foto:'http://drive.google.com/uc?export=view&id=1MV3TOxKxtF-rvWb7yolc0uAFyS8jhVKL',
-        video:'http://drive.google.com/uc?export=view&id=1TOwSpKx8sjj0mkZpVJtxhwywdep-_bBc'
+        video:'http://drive.google.com/uc?export=view&id=1TOwSpKx8sjj0mkZpVJtxhwywdep-_bBc',
+        voto:0
     },
     {
         id:1,
         nombre:'Gustavo Andrés González Puertas',
         personaje:'Nick Wilde - Zootopia',
         foto:'http://drive.google.com/uc?export=view&id=1w0lh-3g6f7-SSOBeTqHnsj9QCgkO7DMQ',
-        video:'http://drive.google.com/uc?export=view&id=1V3QQq-n_QRN-jdau0LVgR5epQJrjvyRI'
+        video:'http://drive.google.com/uc?export=view&id=1V3QQq-n_QRN-jdau0LVgR5epQJrjvyRI',
+        voto:0
     },
     {
         id:3,
         nombre:'Nicole Madelayne Morán Mendoza ',
         personaje:'Hange Zoe - Shigenki no Kyojin',
         foto:'http://drive.google.com/uc?export=view&id=1jJ7gmuD44qAb2AibcBWsQTF3XuVb-SaQ',
-        video:'http://drive.google.com/uc?export=view&id=1zPnLM7P0gIM6NXpC4K76-Y3q-UrM10Fl'
+        video:'http://drive.google.com/uc?export=view&id=1zPnLM7P0gIM6NXpC4K76-Y3q-UrM10Fl',
+        voto:0
     }
 ]
 
@@ -34,7 +37,7 @@ function llenarGrilla(){
             </div>
             <div class=" d-flex justify-content-around m-4"> 
                 <a href="${i.video}"><button type="button" class="btn btn-warning">Ver Video</button></a>
-                <button type="button" class="btn btn-warning" id="${i.id}">Me Gusta </button>
+                <p id="${i.id}">Me Gusta <span class="text-primary">${i.voto}</span></p>
             </div>
         </div>
         `;
