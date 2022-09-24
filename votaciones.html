@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeekWeek</title>
+    <link rel="icon" type="image/x-icon" href="./assets/comic.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img id="logo" src="./assets/fepol-light.svg" alt="Fepol logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#inscripciones">Inscripciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#ubicacion">Lugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./votaciones.html">Votaciones Cosplay</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main> 
+        <section class="d-flex justify-content-center mt-5">
+            <h1 class="main-text">Concurso de Cosplay</h1>
+          </section>
+        <div class="participantes m-0 d-flex justify-content-center" id="auspiciantes">
+        </div>
+        <section class="d-flex justify-content-center mt-5">
+          <h1 class="main-text">FADCOM - ESPOL</h1>
+        </section>
+        <div class="d-flex m-5 justify-content-center" id="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1022.2662026876262!2d-79.96268882268645!3d-2.1432610236571445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72fd09db9eb7%3A0xab610e2c62375c0!2sFacultad%20de%20Arte%2C%20Dise%C3%B1o%20y%20Comunicaci%C3%B3n%20Audiovisual%20FADCOM%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1663100809382!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+      <div class="redes-sociales m-3">
+        <a href="https://www.instagram.com/fepol_espol/?hl=es-la" target="_blank" class="btn-red-social"
+          >Síguenos FEPOL &nbsp;<i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="m-3">
+        <p>GeekWeek 2022 | Creado con ❤️ por <a href="https://www.instagram.com/igeovanny.rl/?hl=es-la" target="_blank" class="link-dark">Geovanny Rojas</a></p>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAelL7CM9QoSXxF6XpagwbYnhCRyvFX57w",
+          authDomain: "geekweek-1dbe5.firebaseapp.com",
+          databaseURL: "https://geekweek-1dbe5-default-rtdb.firebaseio.com",
+          projectId: "geekweek-1dbe5",
+          storageBucket: "geekweek-1dbe5.appspot.com",
+          messagingSenderId: "706648482307",
+          appId: "1:706648482307:web:4f3ac795317c5986c2e436"
+        };
+      
+        // Initialize Firebase
+        var app = initializeApp(firebaseConfig);
+
+      </script>
+  </body>
+</html>
